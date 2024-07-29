@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lista-pedidos">
+            <h2>Lista de Pedidos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pedido</th>
+                        <th>Cliente</th>
+                        <th>Data</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody id="pedidos-lista">
+                </tbody>
+            </table>
+        </div>
+        <div class="informacoes-pedido">
+            <h2>Informações do Pedido <span id="id_pedido"></span></h2>
+            <div class="dados-cliente">
+                <h3>Dados do Cliente</h3>
+                <p>Nome: <span id="nome_cliente"></span></p>
+                <p>CPF: <span id="cpf_cliente"></span></p>
+                <p>E-mail: <span id="email_cliente"></span></p>
+                <p>Data: <span id="data_pedido"></span></p>
+            </div>
+            <div class="itens-pedido">
+                <h3>Itens do Pedido</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="itens-pedido-lista">
+                    </tbody>
+                </table>
+            </div>
+            <div class="total-pedido">
+                <p>Total: <span id="valor_total_pedido"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
